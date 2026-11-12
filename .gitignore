@@ -134,3 +134,8 @@ config.yaml
 generate.ini
 config.json
 config.local.json
+# ---- 本项目 CI 相关 ----
+output/
+.previous/
+# ci/config.json 是 CI 用的配置，必须纳入版本控制
+!ci/config.json

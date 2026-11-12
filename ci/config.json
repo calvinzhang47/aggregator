@@ -1,0 +1,75 @@
+{
+    "sites": [
+        {
+            "name": "ermaozi",
+            "subscribe": ["https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/reachable/v2ray.txt"],
+            "domain": "github.com",
+            "enable": true,
+            "push_to": ["proxy"],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 3.0,
+            "count": 10
+        },
+        {
+            "name": "mfuu",
+            "subscribe": ["https://raw.githubusercontent.com/mfuu/v2ray/master/sub"],
+            "domain": "github.com",
+            "enable": true,
+            "push_to": ["proxy"],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 3.0,
+            "count": 10
+        },
+        {
+            "name": "aiboboxx",
+            "subscribe": ["https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/sub"],
+            "domain": "github.com",
+            "enable": true,
+            "push_to": ["proxy"],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 3.0,
+            "count": 10
+        },
+        {
+            "name": "ripaojiedian",
+            "subscribe": ["https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"],
+            "domain": "github.com",
+            "enable": true,
+            "push_to": ["proxy"],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 3.0,
+            "count": 10
+        }
+    ],
+    "crawl": {
+        "enable": false
+    },
+    "groups": {
+        "proxy": {
+            "emoji": true,
+            "list_only": true,
+            "targets": {
+                "clash": "proxy-clash",
+                "singbox": "proxy-singbox",
+                "mixed": "proxy-v2ray"
+            },
+            "regularize": {
+                "enable": false
+            }
+        }
+    },
+    "storage": {
+        "engine": "local",
+        "base": "",
+        "domain": "",
+        "items": {
+            "proxy-clash": {"folder_id": "./output", "file_id": "proxy-clash.yaml"},
+            "proxy-singbox": {"folder_id": "./output", "file_id": "proxy-singbox.json"},
+            "proxy-v2ray": {"folder_id": "./output", "file_id": "proxy-v2ray.txt"}
+        }
+    }
+}
